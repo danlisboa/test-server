@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Starting API Hello Server"
 
-npm install
+docker build -t test-app .
 
-pm2 start npm --name "API" -- start
+sudo docker run -p 3000:3000 -d test-app
