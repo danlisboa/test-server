@@ -1,8 +1,7 @@
 #!/bin/bash
 echo "Starting API Hello Server"
 set -x #echo on
-systemctl start docker
-
+sudo service docker start
 
 sudo docker build . -t test-app
 
