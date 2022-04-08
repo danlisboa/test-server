@@ -1,4 +1,6 @@
 #!/bin/bash
+set -x #echo on
+
 echo "Starting API Hello Server"
 
 sudo docker build . -t test-app
