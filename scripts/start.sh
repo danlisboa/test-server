@@ -3,4 +3,4 @@ echo "Preparing application"
 
 cd /home/ubuntu/projects
 
-sh init.sh
+sudo sh init.sh
