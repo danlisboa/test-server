@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu/projects
 hooks:
   BeforeInstall:
-    - location: scripts/prepare.sh
+    - location: /home/ubuntu/projects/scripts/prepare.sh
 #    - location: Scripts/UnzipDataBundle.sh
 #  AfterInstall:
 #    - location: Scripts/RunResourceTests.sh
