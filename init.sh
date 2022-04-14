@@ -2,11 +2,11 @@
 echo "Starting API Hello Server"
 set -x #echo on
 
-cd /home/ubuntu/project
+cd /home/ubuntu/projects
 
 sudo docker kill $(sudo docker ps -q)
 
-sudo docker build . -t test-app
+sudo docker build.-ttest-app
 
 sudo docker run -d -p 3000:3000 test-app
 
