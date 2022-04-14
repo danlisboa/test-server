@@ -2,7 +2,6 @@
 echo "Starting API Hello Server"
 set -x #echo on
 
-cd /home/ubuntu/
 sudo snap install docker
 sudo snap status docker #check the status
 sudo snap start docker # start the service
