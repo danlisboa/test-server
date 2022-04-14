@@ -6,8 +6,10 @@ cd /home/ubuntu/projects
 
 sudo service docker start
 
+sudo docker kill $(docker ps -q)
+
 sudo docker build . -t test-app
 
-sudo docker run -p 3000:3000 test-app
+sudo docker run -d -p 3000:3000 test-app
 
 sudo docker ps
