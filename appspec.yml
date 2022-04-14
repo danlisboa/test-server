@@ -8,11 +8,14 @@ hooks:
   ApplicationStop:
     - location: stop.sh
     - runas: ubuntu
+    - timeout: 300
 
   ApplicationStart:
     - location: init.sh
     - runas: ubuntu
+    - timeout: 300
 
   BeforeInstall:
     - location: before.sh
     - runas: ubuntu
+    - timeout: 300
