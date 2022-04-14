@@ -11,7 +11,6 @@ permissions:
     group: ubuntu
 
 hooks:
-  BeforeInstall:
+  Install:
     - location: scripts/start.sh
-      timeout: 120
       runas: ubuntu
