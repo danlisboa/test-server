@@ -11,6 +11,9 @@ permissions:
     group: ubuntu
 
 hooks:
+  BeforeInstall:
+    - location: stop.sh
+    - runas: ubuntu
   Install:
     - location: init.sh
       timeout: 120
