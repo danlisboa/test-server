@@ -4,12 +4,6 @@ files:
   - source: /
     destination: /home/ubuntu/projects
 
-permissions:
-  - object: /
-    pattern: "**"
-    owner: ubuntu
-    group: ubuntu
-
 hooks:
   ApplicationStop:
     - location: stop.sh
