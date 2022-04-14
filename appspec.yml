@@ -4,18 +4,14 @@ files:
   - source: /
     destination: /home/ubuntu/projects
 
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
+
 hooks:
-  ApplicationStop:
-    - location: stop.sh
-    - runas: root
-    - timeout: 300
-
-  ApplicationStart:
-    - location: init.sh
-    - runas: root
-    - timeout: 300
-
   BeforeInstall:
-    - location: before.sh
-    - runas: root
-    - timeout: 300
+    - location: init.sh
+      timeout: 120
+      runas: ubuntu
