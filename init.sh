@@ -2,7 +2,7 @@
 echo "Starting API Hello Server"
 set -x #echo on
 
-cd /home/ubuntu/projects
+cd /home/ubuntu/project
 
 sudo docker kill $(sudo docker ps -q)
 
