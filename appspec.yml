@@ -14,3 +14,4 @@ hooks:
   ApplicationStart:
     - location: /home/ubuntu/projects/init.sh
       runas: ubuntu
+      timeout: 4
