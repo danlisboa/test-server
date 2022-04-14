@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "Preparing application"
-pwd
+cd /home/ubuntu/projects
 sudo npm install
 sudo node server.js
