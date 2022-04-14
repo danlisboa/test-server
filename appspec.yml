@@ -11,9 +11,10 @@ permissions:
     group: ubuntu
 
 hooks:
-  BeforeInstall:
+  ApplicationStop:
     - location: stop.sh
     - runas: ubuntu
-  Install:
+
+  ApplicationStart:
     - location: init.sh
       runas: ubuntu
