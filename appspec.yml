@@ -8,7 +8,7 @@ hooks:
   #    - location: /home/ubuntu/projects/scripts/prepare.sh
   #    - location: Scripts/UnzipDataBundle.sh
   AfterInstall:
-    - location: /home/ubuntu/projects/scripts/prepare.sh
+    - location: ./scripts/prepare.sh
 #      timeout: 180
 #  ApplicationStart:
 #    - location: Scripts/RunFunctionalTests.sh
