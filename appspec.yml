@@ -14,6 +14,11 @@ hooks:
   ApplicationStop:
     - location: stop.sh
     - runas: ubuntu
-#  ApplicationStart:
-#    - location: init.sh
-#      runas: ubuntu
+
+  ApplicationStart:
+    - location: init.sh
+    - runas: ubuntu
+
+  BeforeInstall:
+    - location: before.sh
+    - runas: ubuntu
