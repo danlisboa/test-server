@@ -12,6 +12,6 @@ permissions:
 
 hooks:
   Install:
-    - location: /home/ubuntu/projects/init.sh
+    - location: init.sh
+      timeout: 120
       runas: ubuntu
-      timeout: 4
