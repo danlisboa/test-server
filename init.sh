@@ -8,8 +8,6 @@ sudo service docker start
 
 sudo docker build . -t test-app
 
-docker kill $(docker ps -q)
-
 sudo docker run -p 3000:3000 test-app
 
 sudo docker ps
