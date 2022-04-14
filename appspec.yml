@@ -4,11 +4,11 @@ files:
   - source: /
     destination: /home/ubuntu/projects
 hooks:
-  BeforeInstall:
+  #  BeforeInstall:
+  #    - location: /home/ubuntu/projects/scripts/prepare.sh
+  #    - location: Scripts/UnzipDataBundle.sh
+  AfterInstall:
     - location: /home/ubuntu/projects/scripts/prepare.sh
-#    - location: Scripts/UnzipDataBundle.sh
-#  AfterInstall:
-#    - location: Scripts/RunResourceTests.sh
 #      timeout: 180
 #  ApplicationStart:
 #    - location: Scripts/RunFunctionalTests.sh
