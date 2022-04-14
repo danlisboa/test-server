@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Preparing application"
-npm install
-node server.js
+sudo npm install
+sudo node server.js
