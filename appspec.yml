@@ -14,4 +14,4 @@ hooks:
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 20
-      runas: ec2-user
+      runas: ubuntu
