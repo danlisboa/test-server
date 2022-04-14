@@ -16,5 +16,4 @@ hooks:
     - runas: ubuntu
   Install:
     - location: init.sh
-      timeout: 120
       runas: ubuntu
