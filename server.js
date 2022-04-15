@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('api.klivus.tech')
+  res.send('back propagado')
 })
 
 app.listen(3000)
